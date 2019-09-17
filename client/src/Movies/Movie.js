@@ -5,7 +5,7 @@ import MovieCard from './MovieCard';
 const Movie = (props) => {
   const [movie, setMovie] = useState();
   
-  console.log(props);
+  //console.log(props);
   
  
   useEffect(() => {
@@ -17,7 +17,7 @@ const Movie = (props) => {
         .get(`http://localhost:5000/api/movies/${id}`)
         .then(response => {
           setMovie(response.data);
-          console.log(response.data);
+          //console.log(response.data);
         })
         .catch(error => {
           console.error(error);
